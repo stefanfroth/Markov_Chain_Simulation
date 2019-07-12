@@ -108,9 +108,9 @@ venv.bak/
 .DS_Store
 
 # Prevent the input files from being uploaded (because of copyright reasons)
-#Challenge_for_Analysts_2019.pdf
-#data/prices.xlsx
-#data/sales_data.xlsx
+Challenge_for_Analysts_2019.pdf
+data/prices.xlsx
+data/sales_data.xlsx
 
 # Prevent the lecture files from being uploaded
 lectures/*
