@@ -1,6 +1,6 @@
 '''
-The program churn_simulator_class defines a class Customer and
-a class Simulation. Using the two classes you can run simulation
+The program churn_simulator_class defines a Customer class and
+a Simulation class. Using the two classes you can run simulations
 of Markov Chain Models.
 '''
 
@@ -26,9 +26,9 @@ class Customer:
                 ):
         '''
 
-        :param possible_initial_states:
-        :param possible_states:
-        :param transition_probabilities:
+        :param possible_initial_states: All the states that are possible initial states for the simulation.
+        :param possible_states: All the states that are possible states during the simulation.
+        :param transition_probabilities: Probabilitie Matrix for the transition probabilities between states.
         '''
 
         self.name = names.get_full_name()
@@ -92,6 +92,20 @@ class Simulation:
         self.possible_states = possible_states
         self.transition_probabilities = transition_probabilities
         self.mapping_items_ints = mapping_items_ints
+
+        '''
+
+        :param total_periods: Nr. of periods the Markov Chain Process is simulated.
+        :param initial_cust_nr: Nr. of customers in the initial state of the Process.
+        :param new_cust_per_period: Nr. of customers introduced to the process at each timestep.
+        :param customers: A list of the customers that are part of the process.
+        :param history: A data frame saving the purchase history of each customer.
+        :param prices: Prices for the goods.
+        :param possible_initial_states: All the states that are possible initial states for the simulation.
+        :param possible_states: All the states that are possible states during the simulation.
+        :param transition_probabilities: Probabilitie Matrix for the transition probabilities between states.
+        :param mapping_items_ints:
+        '''
 
 
     def create_customers(self):
